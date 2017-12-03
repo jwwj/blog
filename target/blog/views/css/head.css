@@ -1,0 +1,16 @@
+@charset "UTF-8";
+body {
+	padding-top: 70px;
+	background-color: #F7FAFC;
+}
+
+
+.dropdown .dropdown-toggle{
+justify-content:center;
+align-items:center;
+display:-webkit-flex;
+}
+.dropdown .dropdown-menu{
+	left:0px;
+	min-width:0px;
+}

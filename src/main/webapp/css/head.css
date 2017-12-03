@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+.dropdown .dropdown-toggle{
+justify-content:center;
+align-items:center;
+display:-webkit-flex;
+}
+.dropdown .dropdown-menu{
+	left:0px;
+	min-width:0px;
+}

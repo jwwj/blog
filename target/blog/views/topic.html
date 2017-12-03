@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>topic</title>
+		
+		<script src="static/jquery/jquery-3.2.1.js"></script>
+		<script src="static/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+		<link href="static/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" />
+		<script src="js/navbar.js"></script>
+		<script src="js/ajaxsetup.js"></script>
+		<link href="css/topic.css" rel="stylesheet" />
+		<link href="css/index_head.css" rel="stylesheet" />
+		<link href="css/head.css" rel="stylesheet" />
+		<style type="text/css">
+			body {
+				padding-top: 70px;
+				background-color: #F7FAFC;
+			}
+		</style>
+
+	</head>
+
+	<body>
+
+		<div class="container">
+
+		<div class="row">
+			<nav class="navbar navbar-fixed-top">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed"
+						data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+						aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span> <span
+							class="icon-bar"></span> <span class="icon-bar"></span> <span
+							class="icon-bar"></span>
+					</button>
+
+				</div>
+				<div class="col-md-8 col-md-offset-2">
+					<a class="navbar-brand" href="#" style="padding-top: 10px;"><img
+						src="img/lgo.gif" /></a>
+					<div class="head-center">
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse"
+							id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav navlink">
+								<li><a href="index.html" style="padding-top: 20px;">首页
+								</a></li>
+								<li  class="active"><a href="topic.html"
+									style="padding-top: 20px;">话题</a></li>
+
+							</ul>
+					
+							<ul class="nav navbar-nav navbar-right">
+								<li><a href="article.html" style="padding-top: 20px;">
+								<span class="glyphicon glyphicon-pencil" ></span>
+								写文章</a>
+								</li>
+								<li class="dropdown"><a href="#" class="dropdown-toggle"
+									data-toggle="dropdown" role="button" aria-haspopup="true"
+									aria-expanded="false"> <img src="img/sss.png" /> 
+									<span id="username"
+										style="padding-left: 5px;"></span> <span class="caret"></span></a>
+									<ul class="dropdown-menu">
+										<li><a href="personal_homepage.html">个人主页</a></li>
+
+										<li><a id="logout" href="#">退出</a></li>
+
+									</ul></li>
+							</ul>
+						</div>
+						<!-- /.navbar-collapse -->
+					</div>
+					<!-- /.container-fluid -->
+				</div>
+
+			</nav>
+		</div>
+
+			<div class="col-md-10 col-md-offset-1">
+				<div class="row">
+					<div class="col-md-9">
+						<div class="row">
+							<div class="topic-background">
+
+								<ul class="nav nav-pills" id="topic">
+									<li role="presentation" class="active">
+										<a href="#">新闻</a>
+									</li>
+									<li role="presentation">
+										<a href="#">美食</a>
+									</li>
+									<li role="presentation">
+										<a href="#">军事</a>
+									</li>
+									<li role="presentation">
+										<a href="#">自然科学</a>
+									</li>
+									<li role="presentation">
+										<a href="#">科技</a>
+									</li>
+									<li role="presentation">
+										<a href="#">互联网</a>
+									</li>
+								</ul>
+								<div class="topic-ralign">
+									<a href="#">热门排序</a>
+									|
+									<a href="#">时间排序</a>
+								</div>
+
+							</div>
+						</div>
+						<div id="page">
+							<!--<div class="row">
+
+								<div class="topic-background">
+									<div class="b">
+
+										<a href="#" class="topic-headline">标题12321414士大夫士大夫啊实打实阿斯顿啊实打实的啊大飒飒的啊十分士大夫士大夫士大夫似的发士大夫是犯得上地方示范点是否大杀四方是冯绍峰士大夫 大飒飒大苏打啊</a>
+										</br>
+										</br>
+										<span class=" topic-link">10.4k</span>
+										<span class="topic-author">作者:<a href="#" >某某某</a></span></br>
+										<span>
+										<p class="topic-content">ssssansjfnajsflbqwjwdbjqwjqwndjqnwdnnajkslbfjklwqbjkbqjwebkjqbejfdsdfsdfsfsdfsdfsdfsfdsdfsdfsddfsfdsdfsdfsfdsfdsfkqwlb</p>
+										<a href="#" class="topic-author" style="margin: 30px;">显示全文</a>
+									</span>
+									</div>
+
+								</div>
+							</div>-->
+						</div>
+
+					</div>
+					<div id="main" class="col-md-3 ">
+						<div class="right" style="height: 500px; background:white;">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/topic.js"></script>
+
+	<script>
+		var json = {
+			"art": [{
+				"topic": "新闻",
+				"art_id": "12356891",
+				"title": "文章标题1",
+				"cont": "文章内容1",
+				"user_name": "作者name",
+				"reading": "阅读量",
+				"like": "点赞人数"
+			}, {
+				"topic": "新闻",
+				"art_id": "987645312",
+				"title": "文章标题2",
+				"cont": "文章内容",
+				"user_name": "作者name",
+				"reading": "阅读量",
+				"like": "点赞人数"
+			}, {
+				"topic": "新闻",
+				"art_id": "123456789",
+				"title": "文章标题3",
+				"cont": "文章内容",
+				"user_name": "作者name",
+				"reading": "阅读量",
+				"like": "点赞人数"
+			}]
+		};
+
+		function Each_info() {
+			$.each(json.art, function(i, item) {
+				$('<dir></dir>').addClass('row').addClass('topic-background').addClass('b')
+					.append($('<a ></a>').addClass('topic-headline').append(item.title))
+					.append('</br></br>')
+					.append($('<span ></span>').addClass('topic-link').append(item.reading))
+					.append($('<span></span>').addClass('topic-author').append(item.user_name))
+					.append($('<p></p>').addClass('topic-content').append(item.cont))
+					.append($('<a href="body_matter.html"></a>').addClass('topic-show').append('显示全文'))
+					.appendTo('#page');
+			});
+		}
+		function Each_title() {
+		var topic = {"title": $("#topic").find(".active a").text()};
+			$.ajax({
+				//url: "www.baidu.com",
+				data: JSON.stringify(topic),
+				dataType:"json",
+				contentType:"application/json",
+				type: "post",
+				success: function(Data) {
+					
+					success();
+				}
+			});
+		}
+		$(function() {
+			
+			Each_title();
+			Each_info();
+			$(".topic-background li").click(function() {
+				$(".topic-background li.active").removeClass("active");
+				$(this).addClass("active");
+				$("#page").empty();
+				Each_title();
+				Each_info();
+			});
+
+		});
+	</script>
+
+</html>

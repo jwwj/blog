@@ -1,0 +1,80 @@
+	body {
+				padding-top: 70px;
+			}
+			
+			.topic-background {
+				margin: 14px 0px;
+			}
+			
+			.img_size {
+			
+				width: 40px;
+				height:40px;
+			}
+			
+			.user_name {
+				padding-top: 40px;
+				margin-left: 20px;
+				font-weight: bold;
+				font-size: large;
+			}
+			.btn1{
+				float:right;
+				margin:15px;
+				display:none;
+			}
+			.btn2{
+				float:right;
+				margin:15px;
+				display:none;
+			}
+			.user{
+				margin-top:30px;
+				
+			}
+			.userid{
+				font-weight: 600;
+				float:left;
+				font-size: large;
+			}
+			.usercont{
+				float:left;
+				font-size: initial;
+				margin-left:60px;
+			}
+			.btn3{
+				float:right;	
+				margin-top: 40px;
+				letter-spacing:2px;
+				
+						
+			}
+			.reuser{
+				display:none;
+				background: #F7F8FA;
+			}
+			.rebtn{
+				float:right;
+				letter-spacing:2px;
+				margin-top: 40px;
+				margin-bottom: 20px;
+			}
+			.text1{
+				margin-left:20px;
+				float:right;
+    			width: 90%;	
+    			height:50px;
+			}
+			.textarea{
+				resize: none;
+				margin-left: 60px;
+   			 	width: 90%;
+   			 	display:none;
+   			 	overflow:hidden;
+			}
+			.rebtn1{
+				display:none;
+				float:right;
+				letter-spacing:2px;
+				margin:10px 0px;
+			}

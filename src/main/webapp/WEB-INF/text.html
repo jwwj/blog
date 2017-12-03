@@ -1,0 +1,35 @@
+<html>
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js" type="text/javascript"></script>
+   <script type="text/javascript">
+                function insertcode() {
+                    var $body = $("body");
+                    $body.append('<div style=\" height:1000px; font-size:24px;\">新增项目</div>')
+                    $("#page_tag_load").hide();
+                }
+                $(document).ready(function () {
+
+                    $(window).scroll(function () {
+                        var $body = $("body");
+                        var $html = "";
+                        $html += "<br/>" + ($(window).height() + $(window).scrollTop());
+                        $html += "<br/>window.height: " + $(window).height();
+                        $html += "<br/>body.height: " + $body.height();
+                        $html += "<br/>window.scrollTop: " + $(window).scrollTop();
+                        $("#page_tag_bottom").html($html);
+                  /*判断窗体高度与竖向滚动位移大小相加 是否 超过内容页高度*/
+                        if (($(window).height() + $(window).scrollTop()) >= $body.height()) {
+                            $("#page_tag_load").show();
+                            //setTimeout(insertcode, 1000);/*IE 不支持*/
+                            insertcode();
+                        }
+                    });
+                });
+    </script>
+</head>
+<body>
+    <div style=" height:1000px; font-size:24px;">新增项目</div>
+    <div id="page_tag_bottom" style=" width:100%; position:fixed; top:0px; background-color:#cccccc;height:100px;"></div>
+    <div id="page_tag_load" style=" display:none; font-size:14px;position:fixed; bottom:0px; background-color:#cccccc;height:50px;">加载中...</div>
+</body>
+</html>

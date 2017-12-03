@@ -1,0 +1,14 @@
+eclipse.preferences.version=1
+encoding//src/main/java=GBK
+encoding//src/main/java/com/coder/blog/controller/ArticleController.java=GBK
+encoding//src/main/java/com/coder/blog/controller/UserController.java=GBK
+encoding//src/main/java/com/coder/blog/dao/HbaseDao.java=GBK
+encoding//src/main/java/com/coder/blog/dao/UserMapper.java=GBK
+encoding//src/main/java/com/coder/blog/filter/LoginHandlerIntercepter.java=GBK
+encoding//src/main/java/com/coder/blog/init=UTF-8
+encoding//src/main/java/com/coder/blog/init/Hbase.java=GBK
+encoding//src/main/webapp/WEB-INF/views/error.jsp=UTF-8
+encoding//src/test/java=GBK
+encoding//src/test/java/com/coder/blog/test=GBK
+encoding//src/test/java/com/coder/blog/test/TestArtical.java=GBK
+encoding//src/test/java/com/coder/blog/test/TestUser.java=GBK

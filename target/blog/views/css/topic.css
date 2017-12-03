@@ -1,0 +1,54 @@
+
+.topic-background{
+	background: #FFFFFF;
+	
+	padding: 20px 20px 20px 20px;
+	
+}
+.topic-ralign{
+		text-align: right;
+		
+}
+.topic-topic{
+		color: #D5D5D5;
+		margin-bottom:20px ;
+
+}
+.topic-headline{
+		font-weight:1000 ;
+		color: #337AB7;
+		margin:5px 0px;
+}
+.topic-author{
+		font-size: small;
+		color: #b9b9b9;
+		margin:5px 0px;
+		padding-left:0px ;
+		
+}
+.topic-content{
+		margin:5px 0px;
+		color: #000000;
+		padding-left:30px ;
+		word-break: break-all;
+}
+.topic-link{
+	text-align: center;
+		font-size: 13px;
+		
+   		padding:5px 6px;
+   		color: #337AB7;
+   		background: #EFF6FA;
+   		border: 0px;
+   		border-radius: 0px;
+}
+.right{
+    float:left;
+  
+    height:500px;
+    position:fixed;
+
+    margin-right: 300px;
+    width: 200px;
+}
+
